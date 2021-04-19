@@ -10,7 +10,6 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
-
     color: #7D7987;
     min-width: 420px;
     
@@ -22,6 +21,7 @@ p {
 }
 a {
     text-decoration: none;
+    border: 0;
 }
 img, a {
     outline: none;
