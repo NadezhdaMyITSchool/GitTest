@@ -29,8 +29,7 @@ img, a {
 }
 h1, h2, h3, h4, h5, h6 {font-weight: bold;color: #000000;line-height: 1.16;}
 h1 {    
-    font-size: 2.6em;
-    
+    font-size: 2.6em;    
 }
 h2 {
     font-size: 2em;
@@ -67,15 +66,16 @@ h3 {
     transition:  0.4s ease-in;  /*'эффект при загрузке можно убрать только через js*/
 }
 
+.button-solid {
+    background-color: #458FF6;
+    color: #FFFFFF;
+}
+
 .button-default:hover {
     background-color: #458FF6;
     color: #FFFFFF;
     
 } 
-.button-solid {
-    background-color: #458FF6;
-    color: #FFFFFF;
-}
 .button-solid:hover {
     transform: scale(1.1);
     
@@ -348,8 +348,11 @@ section.services {
     height: 425px;
 }
 
-
-
+/*Testimonials*/
+.testimonials__item {
+    display: flex;
+    flex-direction: column;
+}
 
 /*****ADVANTAGES*******/
 .advantages {
