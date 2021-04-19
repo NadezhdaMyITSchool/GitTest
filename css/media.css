@@ -1,0 +1,195 @@
+/* для устройств (браузеров), которые предоставляют для страницы минимальную ширину области просмотра, равную 544 пикселя */
+@media (min-width: 544px) { /* Стили CSS ... */ }
+/* стили, которые будут применены к элементам страницы с рабочей областью не больше 1199 пикселей */
+@media (max-width: 1199px) { /* Стили CSS ... */ }
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .header, 
+    section.services, 
+    .testimonials, 
+    .advantages {
+        margin-bottom: 150px;
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .wrapper__section {
+        padding: 0; /*делаем все блоки на одной линии*/
+
+    }
+    .header__top {
+        margin-bottom: 100px;
+        grid-template-columns: 6fr 6fr;
+        column-gap: 1%
+    }
+    .header__nav {
+        display: none;
+    }
+    .hidden-menu {
+        display: block;
+    }
+    .header__bottom {
+        /* .header__bottom */
+        min-height: auto;
+    }
+    .header__bottom-pic {
+        right: 0;
+    }
+
+
+
+    .services__gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .advantages__item {
+        column-gap: 10%;
+        min-height: auto;
+        padding: 0;
+    }
+    .advantages__item:nth-child(even) {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .advantages__item:nth-child(odd) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10%;
+
+    }
+    .advantages__pic {
+        right: 0 !important;
+        left: 0 !important;
+    }
+    .advantages__info {
+        padding-top: 0;
+    }
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .footer .wrapper{
+        grid-template-columns:1fr;
+        row-gap: 60px;
+    }
+    .footer__nav > div p  {
+        /* margin-bottom: 8px; */
+    }
+}
+@media (max-width: 920px) {
+   
+}
+@media (max-width: 768px) {
+    .ico-search, 
+    .ico-consultation,
+    .ico-details,
+    .ico-online,
+    .ico-tracking,
+    .ico-emergency {
+        background-size: contain;
+        background-position: bottom;
+    }
+    .ico-search {
+        width: 57px;
+        height: 55px;
+    }
+    .ico-consultation {
+        width: 38px;
+        height: 65px;
+    }
+    .ico-details {
+        width: 38px;
+        height: 65px;
+    }
+    .ico-online {
+        width: 32px;
+        height: 55px;
+    }
+    .ico-tracking {
+        width: 40px;
+        height: 65px;
+    }
+    .ico-emergency {
+        width: 50px;
+        height: 42px;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    h2:after {
+        bottom: -10px;
+    }
+    h3 {
+        line-height: 1.5;
+    }
+    .header, section.services, .testimonials, .advantages {
+        margin-bottom: 100px;
+    }
+
+
+    .header__top {
+        margin-bottom: 80px;
+    }
+    .services__gallery-item {
+        padding: 25px;
+    }
+    .services__gallery-item-pic {
+        height: 65px;
+        margin-bottom: 15px;
+    }
+    .advantages__pic {
+        display: none;
+    }
+    .advantages__item {
+        grid-template-columns: 1fr !important;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer__logo {
+        margin-bottom: 15px;
+    }
+    .footer__nav {
+        grid-template-columns: 1fr;
+    }
+    .footer__nav {
+        text-align: center;
+    }
+    .footer__nav > div p {
+        margin-bottom: 25px;
+    }
+    .footer__nav ul {
+        /* grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr); */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        column-gap: 40px;
+        list-style-type: disc;
+    }
+}
+@media (max-width: 650px) {
+    .header__bottom-pic {
+        display: none;
+    }
+    .header__bottom {
+        grid-template-columns: 1fr;
+    }
+    .services__info {
+        text-align: left;
+    }
+    .services__info h2:after {
+        left: 0;
+    }
+    .services__gallery {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 425px) {
+   
+}
